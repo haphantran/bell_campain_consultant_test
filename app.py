@@ -86,7 +86,8 @@ for input_file in input_files:
         out_df.to_excel(writer, sheet_name=input_file[:-4],
                         index=False, header=False)
     else:
-        print('\t\t{} does not have the correct scheme'.format(input_file))
+        print('\t\t{} does not have the correct schema'.format(input_file))
+
 
 print('Finish processing {} file{}'.format(
     len(input_files), 's' if len(input_files) > 1 else ''))

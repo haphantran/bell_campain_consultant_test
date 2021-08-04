@@ -61,7 +61,6 @@ def getDataQuality(filepath: str, filename: str) -> pd.DataFrame:
     # check the schema
 
     if set(COLUMN_LIST) != set(df.columns):
-        # if the schema is different -> get out of the function
         return None
     NUMBER_OF_COLUMN = len(COLUMN_LIST)
 
